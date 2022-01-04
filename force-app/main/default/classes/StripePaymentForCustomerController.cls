@@ -24,6 +24,7 @@ public without sharing class StripePaymentForCustomerController {
         return AuraResponse;
     }
 
+    
     @AuraEnabled
     public static AuraResponse saveData(string wrapperString){
         AuraResponse AuraResponse;
@@ -101,7 +102,7 @@ public without sharing class StripePaymentForCustomerController {
         }
     }
 
-    class AuraResponse {
+    public class AuraResponse {
 
         @auraEnabled public Boolean isSuccess;
         @auraEnabled  public string message;
